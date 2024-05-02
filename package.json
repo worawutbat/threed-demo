@@ -1,0 +1,30 @@
+{
+  "name": "threed-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open --mode development",
+    "build:stats": "webpack --profile --json > stats.json",
+    "analyze": "webpack-bundle-analyzer stats.json",
+    "prod": "webpack --mode production",
+    "build": "webpack",
+    "lint": "eslint '*/**/*.{js,ts}' --quiet --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/three": "^0.164.0",
+    "html-webpack-plugin": "^5.6.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^4.9.5",
+    "webpack": "^5.91.0",
+    "webpack-bundle-analyzer": "^4.10.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "three": "^0.164.1"
+  }
+}
